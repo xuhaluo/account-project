@@ -1,0 +1,187 @@
+2019-08-14 18:01:34
+Array
+(
+    [channel_id] => 83
+    [mchid] => 10340
+    [order_id] => 201908141800587078
+    [order_no] => BC20190814180101963907
+    [total_amount] => 100.00
+    [sign] => 1DE054EED3DC2124B4011CEBB99A81454CE9E31F
+)
+
+2019-08-14 18:04:45
+Array
+(
+    [channel_id] => 83
+    [mchid] => 10340
+    [order_id] => 201908141800587078
+    [order_no] => BC20190814180101963907
+    [total_amount] => 100.00
+    [sign] => 1DE054EED3DC2124B4011CEBB99A81454CE9E31F
+)
+
+2019-08-14 18:04:49
+Array
+(
+    [channel_id] => 83
+    [mchid] => 10340
+    [order_id] => 201908141800587078
+    [order_no] => BC20190814180101963907
+    [total_amount] => 100.00
+    [sign] => 1DE054EED3DC2124B4011CEBB99A81454CE9E31F
+)
+
+2019-08-16 22:11:32
+Array
+(
+    [channel_id] => 83
+    [mchid] => 10340
+    [order_id] => 201908162210518603
+    [order_no] => BC20190816221054492501
+    [total_amount] => 100.00
+    [sign] => B0F833A40FC049C8434FAE74B5329A759097F952
+)
+
+2019-08-19 20:03:01
+Array
+(
+    [channel_id] => 78
+    [mchid] => 10340
+    [order_id] => 201908191957165452
+    [order_no] => BC20190819195723712992
+    [total_amount] => 5000.00
+    [sign] => DAA841B57BE88D3713D0E089572D1734328DB716
+)
+
+2019-08-20 13:02:42
+Array
+(
+    [channel_id] => 83
+    [mchid] => 10340
+    [order_id] => 201908201259061520
+    [order_no] => BC20190820125922636618
+    [total_amount] => 10000.00
+    [sign] => 864A7671DD190FB5103E09E64D2FF14149AB6477
+)
+
+2019-08-20 13:16:27
+Array
+(
+    [channel_id] => 83
+    [mchid] => 10340
+    [order_id] => 201908201313395354
+    [order_no] => BC20190820131344654669
+    [total_amount] => 10000.00
+    [sign] => B48C26CAF2E353EC46954F5850E4D9F3D31837CC
+)
+
+2019-08-23 14:22:01
+Array
+(
+    [channel_id] => 78
+    [mchid] => 10340
+    [order_id] => 201908231417188359
+    [order_no] => BC20190823141725132601
+    [total_amount] => 4000.00
+    [sign] => 682008028BA009AA2C21111EA33E29C28A021F86
+)
+
+2019-08-23 14:52:51
+Array
+(
+    [channel_id] => 78
+    [mchid] => 10340
+    [order_id] => 201908231451087553
+    [order_no] => BC20190823145114526212
+    [total_amount] => 600.00
+    [sign] => A8D65ABD20072FBAB2D57D8B7363EB36003BED0A
+)
+
+2019-08-26 14:43:09
+Array
+(
+    [channel_id] => 78
+    [mchid] => 10340
+    [order_id] => 201908261440569581
+    [order_no] => BC20190826144102569441
+    [total_amount] => 500.00
+    [sign] => 012A6388A3BA8EDD2349762F6489DFA22F9062AF
+)
+
+2019-08-27 13:08:21
+Array
+(
+    [channel_id] => 78
+    [mchid] => 10340
+    [order_id] => 201908271307063596
+    [order_no] => BC20190827130711691967
+    [total_amount] => 3000.00
+    [sign] => EE633B3BC39ECA8CAE2876EAAD9FD05A4F32E00F
+)
+
+2019-09-18 13:14:58
+Array
+(
+    [channel_id] => 78
+    [mchid] => 10340
+    [order_id] => 201909181313086822
+    [order_no] => BC20190918131317941376
+    [total_amount] => 500.00
+    [sign] => 02E3A48B1C8E9943E14A3A4434043030DAEFA424
+)
+
+2019-09-24 16:08:09
+Array
+(
+    [channel_id] => 76
+    [mchid] => 10340
+    [order_id] => 201909241555102497
+    [order_no] => BC20190924155519323894
+    [total_amount] => 1000.00
+    [sign] => 670AF39CFD2A8C89595887BAF311908587A8B677
+)
+
+2019-09-24 16:20:07
+Array
+(
+    [channel_id] => 76
+    [mchid] => 10340
+    [order_id] => 201909241555102497
+    [order_no] => BC20190924155519323894
+    [total_amount] => 1000.00
+    [sign] => 40A427AB0EB728856F5508C3CF00C18CA1D29BB6
+)
+
+2019-10-08 09:34:24
+Array
+(
+    [channel_id] => 77
+    [mchid] => 10001
+    [order_id] => 201910080932185027
+    [order_no] => BC20191008093223630348
+    [total_amount] => 3000.00
+    [sign] => 306DBAE25F83013B125BE1BA42A246A80A46F920
+)
+
+2019-10-09 17:58:36
+Array
+(
+    [channel_id] => 77
+    [mchid] => 10001
+    [order_id] => 201910091450287137
+    [order_no] => BC20191009145043381767
+    [total_amount] => 3000.00
+    [sign] => 5340F891831D1E38844F32B439358B34E75873EC
+)
+
+2019-10-09 17:59:08
+Array
+(
+    [channel_id] => 77
+    [mchid] => 10001
+    [order_id] => 201910091450287137
+    [order_no] => BC20191009145043381767
+    [total_amount] => 3000.00
+    [sign] => 5340F891831D1E38844F32B439358B34E75873EC
+)
+

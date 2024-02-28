@@ -1,0 +1,10 @@
+<?php
+/*
+ 本代码由 PHP代码加密工具 Xend(Build 5.00.08) 创建
+ 创建时间 2019-04-23 14:56:54
+ 技术支持 QQ:30370740 Mail:support@phpXend.com
+ 严禁反编译、逆向等任何形式的侵权行为，违者将追究法律责任
+*/
+
+namespace App\Http\Controllers\Api;use Illuminate\Http\Request;use App\Models\SmsLog;use Carbon\Carbon;class VerificationCodeController extends Controller{public function send($type,Request $request){$H2t0=$type=='register';if($H2t0)goto H2tBodyx2;goto H2tNextx2;H2tBodyx2:$rules=['phone'=>'bail|required|regex:/^1[345789]\d{9}$/|unique:users,phone',];$messages=['phone.required'=>'请输入手机号！','phone.regex'=>'请输入正确的手机号！','phone.unique'=>'该手机号已被注册！'];goto H2tx1;H2tNextx2:$H2t0=$type=='forgetPassword';if($H2t0)goto H2tBodyx3;goto H2tNextx3;H2tBodyx3:$rules=['phone'=>'bail|required|regex:/^1[345789]\d{9}$/|exists:users,phone',];$messages=['phone.required'=>'请输入手机号！','phone.regex'=>'请输入正确的手机号！','phone.unique'=>'该手机号未被注册！'];goto H2tx1;H2tNextx3:return ['status'=>false];H2tx1:$types=['register'=>'注册','forgetPassword'=>'找回密码',];$validator=\Validator::make($request->all(),$rules,$messages);if($validator->fails())goto H2tBodyx5;goto H2tNextx5;H2tBodyx5:foreach($validator->errors()->all()as $error){return ['status'=>false,'msg'=>$error];}goto H2tx4;H2tNextx5:H2tx4:$verificationCode=str_pad(random_int(1,9999),4,0,STR_PAD_LEFT);$data=['name'=>config('sms.name'),'sign'=>config('sms.sign'),'pwd'=>config('sms.pwd'),'type'=>config('sms.type'),'mobile'=>$request->phone,'content'=>'验证码：'.$verificationCode.'，请于'.config('sms.expire_time').'分钟内填写。如非本人操作，请忽略本短信。','extno'=>''];$res=sendSms($data);if($res)goto H2tBodyx7;goto H2tNextx7;H2tBodyx7:SmsLog::create(['phone'=>$data['mobile'],'type'=>$types[$type].'验证码','ip'=>$request->getClientIp(),'area'=>ip2address($request->getClientIp()),'code'=>$verificationCode,'created_at'=>Carbon::now()]);$H2t0='verificationCode_' . str_random(15);$key=$H2t0;$expiredAt=now()->addMinutes(config('sms.expire_time'));\Cache::put($key,['phone'=>$request->phone,'code'=>$verificationCode],$expiredAt);return ['status'=>true,'data'=>['verificationKey'=>$key],'msg'=>'验证码发送成功！'];goto H2tx6;H2tNextx7:return ['status'=>false,'msg'=>'系统异常！'];H2tx6:}}
+?>
